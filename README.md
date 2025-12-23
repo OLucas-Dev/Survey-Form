@@ -1,2 +1,17 @@
-# Responsive-Survey
-A responsive survey form built with HTML as part of the freeCodeCamp Responsive Web Design certification.
+# Survey Form
+
+This project is a survey form created using HTML as part of the
+freeCodeCamp Responsive Web Design Certification.
+
+## Features
+- Form validation
+- Input fields (text, email, number)
+- Radio buttons and checkboxes
+- Dropdown menus
+- Textarea for comments
+
+## Technologies
+- HTML5
+
+## Author
+Lucas
