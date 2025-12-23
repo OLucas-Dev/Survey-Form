@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form id="survey-form">
+
+      <!-- Nome -->
+      <label id="name-label" for="name">Name:</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Enter your name"
+        required
+      />
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email:</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <!-- Número -->
+      <label id="number-label" for="number">Age (optional):</label>
+      <input
+        id="number"
+        type="number"
+        name="age"
+        placeholder="Age"
+        min="18"
+        max="100"
+      />
+
+      <!-- Dropdown -->
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role">
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+      </select>
+
+      <!-- Rádio -->
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label>
+        <input type="radio" name="recommend" value="definitely" /> Definitely
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="not-sure" /> Not sure
+      </label>
+
+      <!-- Outra seleção -->
+      <p>What is your favorite feature of freeCodeCamp?</p>
+      <select id="favorite" name="favorite">
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+      </select>
+
+      <!-- Checkboxes -->
+      <p>What would you like to see improved? (Check all that apply)</p>
+      <label>
+        <input type="checkbox" name="improve" value="front-end" /> Front-end Projects
+      </label>
+      <label>
+        <input type="checkbox" name="improve" value="back-end" /> Back-end Projects
+      </label>
+
+      <!-- Comentários -->
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        name="comments"
+        placeholder="Write your feedback here..."
+      ></textarea>
+
+      <!-- Botão -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
